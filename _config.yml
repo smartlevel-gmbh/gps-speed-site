@@ -1,0 +1,13 @@
+title: GPS Speed
+description: GPS speedometer and trip recorder for iPhone, by smartlevel GmbH.
+lang: en
+url: https://gpsspeed.smartlevel.ch
+baseurl: ""
+markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
