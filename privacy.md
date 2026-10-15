@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # GPS Speed Privacy Policy
 
-**Effective date:** 2 October 2026
+**Effective date:** 15 October 2026
 
 This policy covers the GPS Speed app for iPhone, including its Live Activity.
 
@@ -14,7 +14,8 @@ This policy covers the GPS Speed app for iPhone, including its Live Activity.
 - **GPS Speed collects no data.** The developer receives nothing from the app: no location, no trips, no settings,
   no usage statistics and no identifiers.
 - The app uses your location **only on your iPhone** to show your speed and to measure the trips you record.
-- Your recordings are **stored only on this iPhone and in your own backups, and never sent anywhere.**
+- Your recordings are **stored only on this iPhone and in your own backups.** From version 1.1 you can **export**
+  them as GPX files and share them yourself; otherwise they are never sent anywhere.
 - The app has **no account, no ads, no analytics, no tracking and no network connection**.
 - You can delete one recording at any time, all of them whenever no recording is in progress, or the app with all
   its data.
@@ -53,7 +54,8 @@ On your iPhone, the app keeps only the following:
   recorded it); and a filtered GPS track of the trip, about one point per second. Each point holds the time it was
   measured, a position, altitude, speed and direction, the accuracy of the position, altitude and speed, and a few
   markers about the signal (for example a weak signal, or a location that iOS reported as simulated or as coming
-  from an accessory). This version of the app does not show or export the track; it is kept with the trip.
+  from an accessory). The app does not show the track on a map; it is kept with the trip, and from version 1.1 you can
+  export it (see "Exporting recordings").
 - **An unfinished recording:** while a trip is being recorded, the app also keeps what it needs to continue the trip
   after an interruption: running totals, the last position it accepted and a few recent positions it is still
   checking (these are not part of the saved track), with their times, accuracies and speeds. This is deleted when
@@ -66,10 +68,13 @@ On your iPhone, the app keeps only the following:
   whether you have finished the first-launch screens (made your choice about location access), and a small note
   about a running recording (an internal trip identifier, its activity and three yes-or-no flags) so that the app
   can continue it after an interruption.
+- **Exported files (from version 1.1):** when you export recordings, the app writes each one as a GPX file into its
+  own temporary folder, from where the share sheet hands it on. The app deletes these files when the share sheet
+  closes, before the next export and the next time it starts; they are not part of backups.
 - **Diagnostic messages:** like most apps, GPS Speed writes short technical messages to the iOS system log on your
-  iPhone, for example that a recording started (with its activity), was saved or could not be saved. They never
-  contain your location, speeds, distances or recording names; iOS deletes them automatically after a while, and the
-  developer does not receive them.
+  iPhone, for example that a recording started (with its activity), was saved or could not be saved, or how many
+  files an export wrote. They never contain your location, speeds, distances, recording names or file names; iOS
+  deletes them automatically after a while, and the developer does not receive them.
 
 ## Where it is stored
 
@@ -85,15 +90,36 @@ On your iPhone, the app keeps only the following:
 
 ## What is sent where
 
-Nothing is sent to the developer or to anyone else, and the app makes no network requests. Only these leave the app:
+Nothing is sent to the developer, and the app makes no network requests. Only these leave the app:
 
 - **The Live Activity,** from Start to End: the app gives iOS your current speed, distance, recording time, activity
   and GPS or paused state (never your location), and iOS shows it on this iPhone and on your own devices, such as a
   paired Apple Watch or CarPlay (see "The Live Activity can be seen without unlocking").
 - **Your backups,** if you make them (see "Where it is stored").
+- **GPX files you export** (from version 1.1), only when you tap Export GPX File or Export: the app hands them to the
+  iOS share sheet, and they go only where you send them (see "Exporting recordings").
 - **Privacy Policy** (Settings › About), only when you tap it, opens this page in your web browser. Your browser then
   loads it like any other website, and that website's own practices apply to the visit.
 - **Open Settings** and **Open iOS Settings**, only when you tap them, open GPS Speed's page in the Settings app.
+
+## Exporting recordings (from version 1.1)
+
+You can export a recording as a GPX file, a common format for GPS tracks: from the recording's details (Export GPX
+File), by touching and holding it in History, or several at once with Select in History (one file per recording).
+The app then opens the iOS share sheet, where you choose what happens with the files: for example save them in the
+Files app, send them by AirDrop, Mail or Messages, or open them in another app. Nothing is exported or shared unless
+you do this, and the developer receives nothing.
+
+- **What a file contains:** the whole route of the recording, including where it starts and ends: the positions
+  measured with an accuracy of 25 m or better, each with its time, height, and the speed and direction your iPhone
+  measured; the recording's name; its activity as an English word (for example "cycling"); its start time; and "GPS
+  Speed" with the app's version. It does not contain the accuracy of the positions, the app's internal identifiers,
+  the time zone, your device, the statistics or your settings. The file name has the recording's start date and time
+  and its name or activity.
+- **Once you share a file,** it is outside the app: the place or person you send it to, and any app that opens it,
+  handle it under their own terms and practices. A file can reveal where you were, including where a recording
+  starts and ends, for example near your home. Deleting the recording in GPS Speed does not delete files you have
+  saved or sent.
 
 **Apple:** Apple handles the App Store download of the app. If you choose to share analytics with app developers
 (Settings › Privacy & Security › Analytics & Improvements), Apple may give the developer crash reports and usage
@@ -151,6 +177,9 @@ Your recordings stay on your iPhone until you delete them. Deleting cannot be un
 - **Everything:** delete the app (touch and hold its icon › Remove App › Delete App). This removes all its
   recordings and settings from this iPhone. "Offload App" keeps the data.
 
+Exported GPX files that you saved or sent elsewhere stay there; delete them where you keep them. The app's own
+temporary copies are deleted as described under "What is stored".
+
 Copies in backups made before you deleted something stay in those backups until they are replaced or deleted.
 Technically, deleted data can remain in unused parts of the app's database file until that space is reused; it stays
 protected by iOS and is removed together with the app. Deleting a recording also clears the log of saves (see "What
@@ -161,8 +190,9 @@ is stored").
 The developer receives no data from the app, so there is nothing to request, correct or delete about your use of it.
 All data the app keeps in its own storage is on your iPhone (and in your own backups) and under your control: you can
 see your recordings, their statistics and your settings in the app, delete them as described above, and turn off
-location access or Live Activities at any time. This version has no export, and it does not show the positions it
-stores (the GPS track of each recording, and the few positions kept to continue an unfinished one), the pause and
+location access or Live Activities at any time. From version 1.1 you can export your recordings as GPX files (see
+"Exporting recordings"); version 1.0 has no export. The app does not show the positions it stores (the GPS track of
+each recording, and the few positions kept to continue an unfinished one) other than in exported files, the pause and
 resume times, a recording's technical details or the log of saves. The diagnostic messages are not part of this:
 they are in the iOS system log, the app does not show them, and deleting recordings or the app does not remove them;
 iOS deletes them automatically after a while.
